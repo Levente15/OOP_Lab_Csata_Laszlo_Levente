@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
 	System.out.println("Csata Levente");
 
+	System.out.println("\n");
+
 	String nev="Csata Levente";
 	for(int i=0;i<nev.length();i++)
         {
