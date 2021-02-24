@@ -1,5 +1,10 @@
 package com.company;
 
+/**
+ * Ügyes! Na ehhez hasonlóan lett volna jó az első monogramos feladatot is.
+ * Próbáld ki az enhanced for szintexisát is. Megbeszéljük laboron, de valószínű az IntelliJ is
+ * ajánlja a cserét.
+ */
 public class Main {
 
     public static void main(String[] args) {

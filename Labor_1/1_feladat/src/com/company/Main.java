@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * Nem szükséges minden apró feladatot külön class-be, illetve külön projektbe megoldani.
+ * Minden mehetett volna ebbe a Main class-be, külön függvényekbe.
+ */
 public class Main {
 
     public static void main(String[] args) {

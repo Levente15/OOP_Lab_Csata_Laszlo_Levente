@@ -1,5 +1,10 @@
 package com.company;
 
+/**
+ * van egy ciklus üresbe úgymond. i=0, j=0 értékekre nem történik semmi. Lehetne egyből i=1 től kezdeni
+ * vagy megfogalmazni másképp a megállási feltételt.
+ * Egyébként rendben van, de laboron megnézünk egy másik megoldást, ami még elegánsabb.
+ */
 public class Main {
     public static void main(String[] args) {
 
