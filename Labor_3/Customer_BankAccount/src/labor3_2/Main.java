@@ -17,7 +17,9 @@ public class Main {
         }
         System.out.println(customer1);
         System.out.println(customer2);
-        
 
+        customer1.closeAccounts("OTP0000010");
+        System.out.println(customer1);
+        System.out.println(customer2);
     }
 }

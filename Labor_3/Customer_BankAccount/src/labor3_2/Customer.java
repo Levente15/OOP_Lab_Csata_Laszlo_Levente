@@ -54,13 +54,16 @@ public class Customer {
             if (this.accounts[i].getAccountNumber().equals(accountNumber)) {
                 this.accounts[i] = null;
                 this.numAccounts--;
+
+                for(int j=i;j<numAccounts-1;j++){
+                    accounts[j]=accounts[j+1];                }
             }
         }
     }
 
     @Override
     public String toString() {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         result.append(firstName + ' ' + lastName + " accounts:\n");
         for (int i = 0; i < numAccounts; ++i) {
             result.append("\t" + accounts[i].toString() + "\n");
