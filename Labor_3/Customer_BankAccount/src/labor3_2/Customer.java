@@ -33,13 +33,15 @@ public class Customer {
     }
 
     public BankAccount getAccounts(String accountNumber) {
-        for (BankAccount account : this.accounts)
-            if (account.getAccountNumber().equals(accountNumber))
-                return account;
+        for (int i=0;i<numAccounts;i++) {
+            if (this.accounts[i]!=null && this.accounts[i].getAccountNumber().equals(accountNumber)) {
+                return this.accounts[i];
+            }
+        }
 
-        System.out.println("Account number does not exist:" + accountNumber);
         return null;
     }
+
 
     public String getFirstName() {
         return this.firstName;
@@ -58,6 +60,8 @@ public class Customer {
                 for(int j=i;j<numAccounts-1;j++){
                     accounts[j]=accounts[j+1];                }
             }
+            this.accounts[this.numAccounts-1]=null;
+            return;
         }
     }
 
@@ -66,6 +70,7 @@ public class Customer {
         StringBuilder result = new StringBuilder();
         result.append(firstName + ' ' + lastName + " accounts:\n");
         for (int i = 0; i < numAccounts; ++i) {
+            if(this.accounts[i]!=null)
             result.append("\t" + accounts[i].toString() + "\n");
         }
         return result.toString();
