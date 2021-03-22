@@ -6,21 +6,22 @@ public class BankAccount {
 
     public BankAccount(String accountNumber, double balance){
         this.accountNumber=accountNumber;
-        this.balance=balance;
+        this.balance=0;
     }
 
-    public double getBalance() {
-        return balance;
+    public double getBalance(){
+        return this.balance;
     }
-
     public String getAccountNumber() {
-        return accountNumber;
+        return this.accountNumber;
     }
     public double deposit(double amount){
+
         return this.balance+=amount;
     }
     boolean withdraw(double amount) {
         if (this.balance - amount < 0) {
+            System.out.println("Error!");
             return false;
         }
         this.balance-=amount;
@@ -29,9 +30,6 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "BankAccount{" +
-                "accountNumber='" + accountNumber + '\'' +
-                ", balance=" + balance +
-                '}';
+        return this.accountNumber + ": EUR " + this.balance;
     }
 }
