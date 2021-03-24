@@ -9,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Customer> customers = readFromCSVFile("labor4_2_input.csv");
-        for (Customer c : customers)
+
+        for(Customer c : customers)
             System.out.println(c);
     }
 

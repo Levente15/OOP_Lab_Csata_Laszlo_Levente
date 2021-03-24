@@ -56,10 +56,10 @@ public class Customer {
     public String toString() {
         StringBuilder result = new StringBuilder();
 
-        result.append(firstName).append(' ').append(lastName).append("'s accounts:\n");
+        result.append(firstName).append(' ').append(lastName).append(" accounts:\n");
 
         if (this.accounts.size() == 0)
-            result.append("\tNONE\n");
+            result.append("\tNone");
         else
             for (BankAccount account : this.accounts)
                 if (account != null)

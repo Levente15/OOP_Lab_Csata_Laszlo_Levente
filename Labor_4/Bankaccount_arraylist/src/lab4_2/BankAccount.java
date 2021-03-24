@@ -4,7 +4,7 @@ public class BankAccount {
     private String accountNumber;
     private double balance;
 
-    public BankAccount(String accountNumber, double balance){
+    public BankAccount(String accountNumber){
         this.accountNumber=accountNumber;
         this.balance=0;
     }
@@ -30,6 +30,6 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return this.accountNumber + ": EUR " + this.balance;
+        return this.accountNumber + ": euro " + this.balance;
     }
 }
