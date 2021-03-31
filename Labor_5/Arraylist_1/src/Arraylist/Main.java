@@ -32,6 +32,7 @@ public class Main {
         ArrayList<Diak> DIAKS=new ArrayList<>();
         DIAKS.add(diak);
         System.out.println(DIAKS);
+
         ArrayList<Diak> diaks=readfromcsvfile("tanulok.csv");
         int szamalo=0,ossz=0;
         for(Diak d: diaks){
