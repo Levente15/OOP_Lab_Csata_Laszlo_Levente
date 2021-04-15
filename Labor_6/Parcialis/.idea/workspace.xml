@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4129562e-5077-4c5d-8742-0726068c74a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Labor_5/Arraylist_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labor_5/Arraylist_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +46,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -72,6 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617252304174</updated>
       <workItem from="1617252305355" duration="6699000" />
+      <workItem from="1617802773035" duration="10000" />
+      <workItem from="1618327507502" duration="1000" />
     </task>
     <servers />
   </component>
@@ -88,5 +79,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
