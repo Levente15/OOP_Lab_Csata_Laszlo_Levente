@@ -15,4 +15,30 @@ public class Stackinheritance extends ArrayList<Object> {
             System.out.println("A verem tele van");
         }
     }
+    public int getSize(){
+        return this.size();
+    }
+
+    public boolean isFull(){
+        return this.getSize()==this.capacity;
+    }
+
+    public boolean isEmpty(){
+        return this.getSize()==0;
+    }
+
+    public Object pop(){
+
+        if(!this.isEmpty()){
+            Object ob = super.get((this.getSize()-1));
+            super.remove(this.getSize()-1);
+            return ob;
+        }
+        return null;
+    }
+    public Object top(){
+        if(!this.isEmpty())
+            return super.get(getSize()-1);
+        return null;
+    }
 }

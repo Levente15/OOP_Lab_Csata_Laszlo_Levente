@@ -1,5 +1,8 @@
 package irodalom;
 
+import Stack.StackAggretation;
+import Stack.Stackinheritance;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -33,7 +36,14 @@ public class Main {
             }
             System.out.println(i);
         }
+        System.out.println("Inharitage\n");
+        Stackinheritance stackinheritance=new Stackinheritance();
 
+        for(int i=0;i<10;i++){
+            stackinheritance.push(i+1);
+        }
+        while (!stackinheritance.isEmpty())
+            System.out.println(stackinheritance.pop());
 
     }
 }
