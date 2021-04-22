@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07da5ed1-871e-4739-bf14-40fdb9408ed9" name="Default Changelist" comment="Kellene vele meg dolgozni:((">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="07da5ed1-871e-4739-bf14-40fdb9408ed9" name="Default Changelist" comment="Kellene vele meg dolgozni:((" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +114,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
@@ -135,7 +144,6 @@
       <workItem from="1618903082286" duration="5236000" />
       <workItem from="1618910543569" duration="884000" />
       <workItem from="1619004746078" duration="13211000" />
-      <workItem from="1619069695134" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="Stack">
       <created>1618469062237</created>
