@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df3e483e-1240-410d-ae5d-f1593fd582ad" name="Default Changelist" comment="Kell meg vele foglalkozni" />
+    <list default="true" id="df3e483e-1240-410d-ae5d-f1593fd582ad" name="Default Changelist" comment="Kell meg vele foglalkozni">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +44,7 @@
       <workItem from="1619069941942" duration="222000" />
       <workItem from="1619070188431" duration="4028000" />
       <workItem from="1619342182384" duration="1934000" />
+      <workItem from="1619671206999" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="Kell meg vele foglalkozni">
       <created>1619074121299</created>
