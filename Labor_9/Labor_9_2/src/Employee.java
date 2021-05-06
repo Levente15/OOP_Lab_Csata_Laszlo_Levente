@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Employee implements Comparable<Employee>{
     private int ID;
     private String firtsName;
@@ -66,6 +68,18 @@ public class Employee implements Comparable<Employee>{
 
     @Override
     public int compareTo(Employee o) {
-      return 0;
+
+        String thisName = this.lastName + this.firtsName;
+        String oName = o.lastName + o.firtsName;
+
+        return thisName.compareTo(oName);
     }
+
+    public static Comparator<Employee> byBirthDay= new Comparator<Employee>() {
+        @Override
+        public int compare(Employee o1, Employee o2) {
+            return -o1.getBirthday().compareTo(o2.getBirthday());
+        }
+    };
+
 }

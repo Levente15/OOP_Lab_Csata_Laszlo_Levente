@@ -2,6 +2,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Company {
@@ -89,5 +91,14 @@ public class Company {
         for(Employee e: employees)
             if(e instanceof Manager)
                 p.println(e);
+    }
+
+    //az employe oszalyba megirt compateto-val megy a sort
+    public void defaultSort(){
+        Collections.sort(employees);
+    }
+
+    public void sortByComparator(Comparator<Employee> employeeComparator){
+        Collections.sort(employees,employeeComparator);
     }
 }
