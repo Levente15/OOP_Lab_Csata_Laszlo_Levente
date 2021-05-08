@@ -1,0 +1,10 @@
+ID 31
+	Oldal: 3.0
+	Oldalakszam: 4
+	Kerulet: 16.0
+	Terulet: 9
+ID 21
+	Oldal: 4.0
+	Oldalakszam: 4
+	Kerulet: 16.0
+	Terulet: 16
