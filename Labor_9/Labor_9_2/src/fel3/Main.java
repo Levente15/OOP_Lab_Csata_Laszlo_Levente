@@ -5,6 +5,9 @@ public class Main {
         Product p1=new Product(1,"Alma", 223,21);
         System.out.println(p1);
 
+        Storage storage=new Storage("product.txt");
+        storage.printProduct();
+
 
 
 

@@ -36,15 +36,15 @@ public class Product implements Comparable<Product> {
     @Override
     public String toString() {
         StringBuilder b = new StringBuilder();
-               b.append("ID ").append(this.ID).append("\n")
-                .append("Name ").append(name).append("\n")
-                .append("Amount: ").append(amount).append("\n")
-                .append("Price ").append(price);
+        b.append("ID ").append(this.ID).append("\n")
+                .append("\t").append("Name ").append(name).append("\n")
+                .append("\t").append("Amount: ").append(amount).append("\n")
+                .append("\t").append("Price ").append(price);
         return b.toString();
     }
 
     @Override
     public int compareTo(Product o) {
-        return this.ID-o.getID();
+        return this.ID - o.getID();
     }
 }

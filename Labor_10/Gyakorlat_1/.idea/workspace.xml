@@ -28,6 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Labor_9/Labor_9_2" />
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,6 +74,7 @@
       <updated>1620322410841</updated>
       <workItem from="1620322412216" duration="12231000" />
       <workItem from="1620486367551" duration="116000" />
+      <workItem from="1620486549806" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="Gyakorlas">
       <created>1620486412930</created>
