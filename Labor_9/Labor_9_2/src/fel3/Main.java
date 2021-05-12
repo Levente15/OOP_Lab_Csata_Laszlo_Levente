@@ -7,9 +7,7 @@ public class Main {
 
         Storage storage=new Storage("product.txt");
         storage.printProduct();
-
-
-
+        storage.update("product.txt");
 
     }
 }

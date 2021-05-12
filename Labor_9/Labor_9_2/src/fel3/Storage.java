@@ -4,14 +4,16 @@ import javax.swing.plaf.PanelUI;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Storage {
-    private ArrayList<Product> products;
+    private final ArrayList<Product> products;
 
     public Storage(String filename){
         this.products=new ArrayList<>();
         this.readfromfile(filename);
+        this.sortByComparator(Product::compareTo);
     }
 
     private ArrayList<String> readFromFile(String filename){
@@ -48,6 +50,28 @@ public class Storage {
                     ));
         }
     }
+    public void update(String fileName) {
+        int updateCounter = 0;
+
+        ArrayList<String> rows = this.readFromFile(fileName);
+
+//        if(rows == null)
+//            return;
+
+        for(String row : rows) {
+            String[] line = row.split(" ");
+
+            try {
+                this.findProduct(Integer.parseInt(line[0])).increaseAmount(Integer.parseInt(line[2]));
+                updateCounter++;
+            } catch (NullPointerException ignored) {}
+        }
+
+
+        System.out.println("Updated " + updateCounter + " products");
+        System.out.println();
+    }
+
 
     public void printProduct(){
         for(Product p : products)
@@ -61,5 +85,9 @@ public class Storage {
             }
         }
         return null;
+    }
+
+    private void sortByComparator(Comparator<Product> comparator) {
+        this.products.sort(comparator);
     }
 }
