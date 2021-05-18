@@ -55,9 +55,8 @@ public class Varos {
         str.append("Id: ").append(azonosito).append("\n")
                 .append("Nev ").append(nev).append("\n")
                 .append("Terulet: ").append(terulet).append("\n")
-                .append("Nevezetesseg").append(egynevezetesseg).append("\n")
-                .append("Nepsuruseg: ").append(nepsuruseg).append("\n")
-                .append("ID: ").append(azonosito).append("\n");
+                .append("Nevezetesseg: ").append(egynevezetesseg).append("\n")
+                .append("Nepsuruseg: ").append(nepsuruseg).append("\n");
         return str.toString();
     }
 }

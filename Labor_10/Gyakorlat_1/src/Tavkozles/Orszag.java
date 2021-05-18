@@ -34,6 +34,10 @@ public class Orszag {
         varosok.add(varos);
     }
 
+    public void setFovaros(String fovaros) {
+        this.fovaros = fovaros;
+    }
+
     public void readfromfile(String filename) {
         Scanner scanner = null;
 
@@ -42,33 +46,61 @@ public class Orszag {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        while (true) {
-            assert scanner != null;
-            if (!scanner.hasNextLine()) break;
+
+        while (scanner.hasNextLine()) {
             String[] line = scanner.nextLine().trim().split(", ");
-            Varos varos = new Varos(
-                    line[0], Integer.parseInt(line[1]),
-                    Double.parseDouble(line[2]), line[3]);
-            this.varosok.add(varos);
+            if (line[0].equals("Fovaros")) {
+                setFovaros(line[1]);
+                varosok.add(new Varos(line[1], Integer.parseInt(line[2]), Double.parseDouble(line[3]), line[4]));
+            } else {
+                varosok.add(new Varos(line[0], Integer.parseInt(line[1]), Double.parseDouble(line[2]), line[3]));
+            }
         }
     }
-    public void kiir(){
-        for(Varos v : varosok)
-            System.out.println(v);
+
+    public String aznevezetesseg(int id) {
+        for (Varos v : varosok) {
+            if (v.getAzonosito() == id) {
+                return v.getEgynevezetesseg();
+            }
+        }
+        return null;
     }
 
-   @Override
-    public String toString(){
-       StringBuffer buffer = new StringBuffer();
+    public Varos fovarosnezo() {
+        for (Varos v : varosok) {
+            if (v.getNev().equals(getFovaros())) ;
+            {
+                return v;
+            }
+        }
+        return null;
+    }
 
-       buffer.append(this.neve).append("\n")
-               .append("\tAz orszag elnoke ").append(this.elnok).append("\n")
-               .append("\tFovaros ").append(this.fovaros).append("\n")
-               .append("\tTovabbi varosok ").append("\n");
-       for (Varos v: varosok)
-           buffer.append("\t\t").append(v.getNev()).append("\n");
+    public void terulet() {
+        int db = 0;
+        for (Varos v : varosok){
 
-       return buffer.toString();
-   }
+            if (v.getTerulet() > fovarosnezo().getTerulet()) {
+                db++;
+            }
+        }
+
+        System.out.println("A varosok szama: " + db);
+    }
+
+    @Override
+    public String toString() {
+        StringBuffer buffer = new StringBuffer();
+
+        buffer.append(this.neve).append("\n")
+                .append("\tAz orszag elnoke ").append(this.elnok).append("\n")
+                .append("\tFovaros ").append(this.fovaros).append("\n")
+                .append("\tTovabbi varosok ").append("\n");
+        for (Varos v : varosok)
+            buffer.append("\t\t").append(v.getNev()).append("\n");
+
+        return buffer.toString();
+    }
 
 }

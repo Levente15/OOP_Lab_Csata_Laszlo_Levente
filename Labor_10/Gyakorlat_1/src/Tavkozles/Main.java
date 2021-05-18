@@ -12,6 +12,10 @@ public class Main {
         System.out.println(orszag);
         System.out.println("***************");
         orszag.readfromfile("orszag.txt");
-        orszag.kiir();
+        System.out.println();
+        System.out.println(orszag.aznevezetesseg(3));
+        System.out.println(orszag.getFovaros());
+        orszag.terulet();
+
     }
 }
