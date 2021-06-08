@@ -44,17 +44,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -70,6 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621487709536</updated>
       <workItem from="1621487710810" duration="5715000" />
+      <workItem from="1623134066583" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="Bac">
       <created>1621492967085</created>
@@ -94,6 +84,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bac" />
